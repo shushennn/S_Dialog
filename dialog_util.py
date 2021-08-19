@@ -192,18 +192,7 @@ root = r'/Users/shushanamanakhimova/S_Dialog/'
 elz = eliza.Eliza()
 elz.load(root+'/eliza/deutsch.txt')
 
-def dialogmanager(eliza):
-    tts(phrases['hello'])    
-    input_s = do_input()
-    input_s = normalize(input_s)
-    while input_s and input_s != phrases['done']:
-        semantics = semantic(input_s)
-        result = data(semantics, vaccinations)
-        out_string = output(semantics, result, input_s, eliza)
-        tts(out_string)
-        tts(phrases['continue'])    
-        input_s = do_input()
-    tts(phrases['goodbye'])  
+
 
 def main():
     init_google()
