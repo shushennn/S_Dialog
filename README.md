@@ -10,3 +10,7 @@ It runs data updates every time you run the program.
 
 The project uses the API from Robert Koch Institut. 
 The dialog system uses EmoRec to detect emotions. 
+
+https://github.com/shushennn/S_Dialog
+
+
